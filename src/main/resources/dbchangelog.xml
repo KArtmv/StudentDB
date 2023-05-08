@@ -1,0 +1,49 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet author="yourname" id="createTable">
+        <createTable tableName="mytable">
+            <column name="id" type="bigint" autoIncrement="true" primaryKey="true"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="age" type="integer"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="kiril (generated)" id="1681649805249-1">
+        <createTable tableName="courses">
+            <column name="course_id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="courses_pkey"/>
+            </column>
+            <column name="course_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="course_description" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="kiril (generated)" id="1681649805249-2">
+        <createTable tableName="groups">
+            <column name="group_id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="groups_pkey"/>
+            </column>
+            <column name="group_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="kiril (generated)" id="1681649805249-3">
+        <createTable tableName="students">
+            <column autoIncrement="true" name="student_id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="students_pkey"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="group_id" type="INTEGER"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
