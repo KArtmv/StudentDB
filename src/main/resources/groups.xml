@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd
+      http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.5.xsd">
+
+	<changeSet author="you" id="insert-into-groups-1">
+		<insert tableName="groups">
+			<column name="group_name" value="YS-27" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-2">
+		<insert tableName="groups">
+			<column name="group_name" value="HV-14" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-3">
+		<insert tableName="groups">
+			<column name="group_name" value="QM-09" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-4">
+		<insert tableName="groups">
+			<column name="group_name" value="ZF-83" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-5">
+		<insert tableName="groups">
+			<column name="group_name" value="RG-52" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-6">
+		<insert tableName="groups">
+			<column name="group_name" value="PL-41" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-7">
+		<insert tableName="groups">
+			<column name="group_name" value="KX-76" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-8">
+		<insert tableName="groups">
+			<column name="group_name" value="ND-98" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-9">
+		<insert tableName="groups">
+			<column name="group_name" value="TC-63" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-10">
+		<insert tableName="groups">
+			<column name="group_name" value="WU-48" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-groups-11">
+		<insert tableName="groups">
+			<column name="group_id" value="0" />
+			<column name="group_name" value="Students without group" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

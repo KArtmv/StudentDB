@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+	<changeSet id="create-table-students" author="you">
+		<createTable tableName="students">
+			<column name="student_id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="first_name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="last_name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="group_id" type="integer" />
+		</createTable>
+	</changeSet>
+
+	<changeSet id="create-table-groups" author="you">
+		<createTable tableName="groups">
+			<column name="group_id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="group_name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+
+	<changeSet id="create-table-courses" author="you">
+		<createTable tableName="courses">
+			<column name="course_id" type="bigint" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="course_name" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="course_description" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+
+	<changeSet id="create-table-studenttocourse" author="you">
+		<createTable tableName="studenttocourse">
+			<column name="enrollment_id" type="bigint"
+				autoIncrement="true">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="student_id" type="integer" />
+			<column name="course_id" type="integer" />
+		</createTable>
+
+		<addForeignKeyConstraint
+			constraintName="fk_studenttocourse_student_id"
+			referencedTableName="students" baseColumnNames="student_id"
+			baseTableName="studenttocourse" referencedColumnNames="student_id" />
+
+		<addForeignKeyConstraint
+			constraintName="fk_studenttocourse_course_id"
+			referencedTableName="courses" baseColumnNames="course_id"
+			baseTableName="studenttocourse" referencedColumnNames="course_id" />
+	</changeSet>
+</databaseChangeLog>

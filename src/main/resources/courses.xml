@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd
+      http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.5.xsd">
+
+	<changeSet author="you" id="insert-into-courses-1">
+		<insert tableName="courses">
+			<column name="course_name" value="Principles of Economics" />
+			<column name="course_description"
+				value="Learn about the fundamentals of economics." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-2">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="World History: Ancient Civilizations" />
+			<column name="course_description"
+				value="Explore the history of ancient civilizations." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-3">
+		<insert tableName="courses">
+			<column name="course_name" value="Creative Writing Workshop" />
+			<column name="course_description"
+				value="Develop your writing skills in a creative environment." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-4">
+		<insert tableName="courses">
+			<column name="course_name" value="Introduction to Psychology" />
+			<column name="course_description"
+				value="Learn the basics of psychology." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-5">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="Business Ethics and Social Responsibility" />
+			<column name="course_description"
+				value="Explore ethical issues in business and the role of social responsibility." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-6">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="Human Anatomy and Physiology" />
+			<column name="course_description"
+				value="Study the human body and its functions." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-7">
+		<insert tableName="courses">
+			<column name="course_name" value="Principles of Marketing" />
+			<column name="course_description"
+				value="Learn the basics of marketing." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-8">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="Environmental Science and Sustainability" />
+			<column name="course_description"
+				value="Study the science of the environment and explore issues of sustainability." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-9">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="Fundamentals of Graphic Design" />
+			<column name="course_description"
+				value="Learn the basics of graphic design." />
+		</insert>
+	</changeSet>
+
+	<changeSet author="you" id="insert-into-courses-10">
+		<insert tableName="courses">
+			<column name="course_name"
+				value="Introduction to Computer Science" />
+			<column name="course_description"
+				value="An introduction to computer science principles and programming." />
+		</insert>
+	</changeSet>
+
+</databaseChangeLog>
